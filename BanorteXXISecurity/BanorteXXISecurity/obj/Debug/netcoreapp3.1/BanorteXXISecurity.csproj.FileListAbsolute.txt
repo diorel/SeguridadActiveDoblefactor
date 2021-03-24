@@ -1,0 +1,116 @@
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.exe
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.deps.json
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.runtimeconfig.json
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.runtimeconfig.dev.json
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.pdb
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Google.Authenticator.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\QRCoder.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.DirectoryServices.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.DirectoryServices.AccountManagement.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.DirectoryServices.Protocols.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\TwoStepsAuthenticator.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Wiry.Base32.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Interop.ActiveDs.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\MethodResponse.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.AssemblyInfoInputs.cache
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.AssemblyInfo.cs
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csproj.CoreCompileInputs.cache
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\staticwebassets\BanorteXXISecurity.StaticWebAssets.Manifest.cache
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\staticwebassets\BanorteXXISecurity.StaticWebAssets.xml
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\scopedcss\bundle\BanorteXXISecurity.styles.css
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.RazorTargetAssemblyInfo.cache
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csproj.CopyComplete
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.dll
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.pdb
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.genruntimeconfig.cache
+C:\Users\sygno.rcortes\Desktop\netCorte\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csprojAssemblyReference.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.exe
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.deps.json
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.runtimeconfig.json
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.runtimeconfig.dev.json
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BanorteXXISecurity.pdb
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Google.Authenticator.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\QRCoder.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.DirectoryServices.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.DirectoryServices.AccountManagement.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.DirectoryServices.Protocols.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\TwoStepsAuthenticator.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Wiry.Base32.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Interop.ActiveDs.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\MethodResponse.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csprojAssemblyReference.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.AssemblyInfoInputs.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.AssemblyInfo.cs
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csproj.CoreCompileInputs.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\staticwebassets\BanorteXXISecurity.StaticWebAssets.Manifest.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\staticwebassets\BanorteXXISecurity.StaticWebAssets.xml
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\scopedcss\bundle\BanorteXXISecurity.styles.css
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.RazorTargetAssemblyInfo.cache
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csproj.CopyComplete
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.dll
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.pdb
+C:\Users\sygno.mmadrigal\Desktop\Pruebas Proyectos\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.genruntimeconfig.cache
