@@ -52,6 +52,9 @@ namespace BanorteXXISecurity.Controllers
 
                     expiraToken = user.ExpiracionToken == 0 ? 60 : user.ExpiracionToken;
 
+                    //Checar IP
+                    string ip = HttpContext.Connection.RemoteIpAddress.ToString();
+
                     var MetaDatos = ActiveUser.GetUserActive(user.User, user.Password, user.App, expiraToken);
                     if (MetaDatos.Code != 0) {
                         //Requiere doble factor

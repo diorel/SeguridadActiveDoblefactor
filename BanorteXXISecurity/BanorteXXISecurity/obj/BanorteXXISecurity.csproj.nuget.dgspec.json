@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {}
+    "C:\\Users\\sygno.mmadrigal\\Desktop\\Proyectos Git\\BanorteXXISecurity\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {
+    "C:\\Users\\sygno.mmadrigal\\Desktop\\Proyectos Git\\BanorteXXISecurity\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
+        "projectUniqueName": "C:\\Users\\sygno.mmadrigal\\Desktop\\Proyectos Git\\BanorteXXISecurity\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
         "projectName": "BanorteXXISecurity",
-        "projectPath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
+        "projectPath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Proyectos Git\\BanorteXXISecurity\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
         "packagesPath": "C:\\Users\\sygno.mmadrigal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\obj\\",
+        "outputPath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Proyectos Git\\BanorteXXISecurity\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sygno.mmadrigal\\AppData\\Roaming\\NuGet\\NuGet.Config",

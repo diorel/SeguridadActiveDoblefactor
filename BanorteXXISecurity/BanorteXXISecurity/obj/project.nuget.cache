@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jNjQ96XscfF+/rhbimvlll00cg6ZmbuJFV6RunHI3ELd6dI3yN6/QnovYAPn3Y8yvCLODuGddBrcmvkkzh4dMg==",
+  "dgSpecHash": "Aq8VZBXIMTDWiuUZOWTGWKV8rPlT4I5CGxdLLdwWkPlRbjGkVyW4QX93eqOxupNvRCqtff4CSAtCF7LZA0Uyvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
+  "projectFilePath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Proyectos Git\\BanorteXXISecurity\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sygno.mmadrigal\\.nuget\\packages\\googleauthenticator\\2.1.1\\googleauthenticator.2.1.1.nupkg.sha512",
     "C:\\Users\\sygno.mmadrigal\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
