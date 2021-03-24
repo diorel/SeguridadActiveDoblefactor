@@ -12,6 +12,11 @@ using BanorteXXISecurity.Data;
 
 namespace BanorteXXISecurity.Controllers
 {
+
+    /// <summary>
+    /// comentario Raul Cortes
+    /// </summary>
+
     [ApiController]
     public class AccessADController : ControllerBase
     {

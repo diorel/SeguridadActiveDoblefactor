@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {}
+    "C:\\Users\\diore\\OneDrive\\Documentos\\RepositoriosGuit\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {
+    "C:\\Users\\diore\\OneDrive\\Documentos\\RepositoriosGuit\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
+        "projectUniqueName": "C:\\Users\\diore\\OneDrive\\Documentos\\RepositoriosGuit\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
         "projectName": "BanorteXXISecurity",
-        "projectPath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
-        "packagesPath": "C:\\Users\\sygno.mmadrigal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sygno.mmadrigal\\Desktop\\Pruebas Proyectos\\BanorteXXISecurity\\BanorteXXISecurity\\obj\\",
+        "projectPath": "C:\\Users\\diore\\OneDrive\\Documentos\\RepositoriosGuit\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\BanorteXXISecurity.csproj",
+        "packagesPath": "C:\\Users\\diore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diore\\OneDrive\\Documentos\\RepositoriosGuit\\SeguridadActiveDoblefactor\\BanorteXXISecurity\\BanorteXXISecurity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sygno.mmadrigal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "GoogleAuthenticator": {
               "target": "Package",
@@ -91,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
