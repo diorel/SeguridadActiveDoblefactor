@@ -26,13 +26,35 @@ namespace BanorteXXISecurity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-        
+            services.AddSwaggerGen(config =>
+            {
+                config.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo 
+                { 
+                    Title = "Api BanorteXXI Security", 
+                    Version = "v1",
+                    Description = "Modulo de autentificación Banorte XXI con Active Directory Doble factor de autenticación",
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact()
+                    {
+                        Name = "Daniel Hernandez Martinez",
+                        Email = "dhernandezma@xxi-banorte.com"
+                    }
+                });
+            }
+       );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+
+            app.UseSwaggerUI(config =>
+            {
+                config.SwaggerEndpoint("/swagger/v1/swagger.json", "Api BanorteXXI Security");
+
+            });
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
