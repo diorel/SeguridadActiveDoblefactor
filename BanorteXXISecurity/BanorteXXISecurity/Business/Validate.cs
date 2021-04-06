@@ -33,7 +33,7 @@ namespace BanorteXXISecurity.Business
         }
 
 
-        public MethodResponse<ActiveResponse> GetUserActive(string usuario, string password, string app, int expiraciontoken)
+        public MethodResponse<ActiveResponse> GetUserActive(string usuario, string password, string app, int expiraciontoken, int tipo)
         {      
             var Response = new MethodResponse<ActiveResponse>();
             var ResponseA = new MethodResponse<DirectoryEntry>();
@@ -47,7 +47,7 @@ namespace BanorteXXISecurity.Business
                 ActiveResponse objectActive = new ActiveResponse();
                 objectActive.Aplicaciones = new List<Application>();
 
-                ResponseA = ldap.ValidateCredentials(LDAP, usuario, password, app);
+                ResponseA = ldap.ValidateCredentials(LDAP, usuario, password, app, tipo);
 
                 if (ResponseA.Code != 0)
                 {
@@ -135,12 +135,9 @@ namespace BanorteXXISecurity.Business
                     Response.Message = ResponseA.Message;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Response.Code = 0;
-                Response.Message = string.Format("Ocurrió un error");
-
-               // Dal.LogError(app, usuario, "Validate.GetUserActive: " + Ex.Message);
+                throw ex;
             }
 
             return Response;

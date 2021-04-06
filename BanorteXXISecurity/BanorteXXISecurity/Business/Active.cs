@@ -33,18 +33,15 @@ namespace BanorteXXISecurity.Business
 
 
 
-        public MethodResponse<DirectoryEntry> ValidateCredentials(string domain, string username, string password, string app)
+        public MethodResponse<DirectoryEntry> ValidateCredentials(string domain, string username, string password, string app, int tipo)
         {
             var Response = new MethodResponse<DirectoryEntry>();
             Response.Code = 1;
 
             try
             {
-               PrincipalContext ctx = new PrincipalContext(ContextType.Domain);
+                PrincipalContext ctx = new PrincipalContext(ContextType.Domain);
                
-
-
-
                 UserPrincipal user = UserPrincipal.FindByIdentity(ctx, username);
                 var dirEntry = user.GetUnderlyingObject() as DirectoryEntry;
 
@@ -72,15 +69,23 @@ namespace BanorteXXISecurity.Business
                     var horasRestantes = Math.Floor((passwordExpirationDate - DateTime.Now).TotalHours);
                     var minutosRestantes = Math.Ceiling((passwordExpirationDate - DateTime.Now).TotalMinutes);
 
-                    if (diasRestantes <= 7 && diasRestantes > 0)
-                        Response.Message = "Tu contraseña expirará en " + diasRestantes + (diasRestantes == 1 ? " día" : " días");
-                    else if (diasRestantes == 0)
+                    //1 - Intranet || 2 - Público
+                    if(tipo == 1)
                     {
-                        if (horasRestantes > 0)
-                            Response.Message = "Tu contraseña expirará en " + horasRestantes + (horasRestantes == 1 ? " hora" : " horas");
-                        else
-                            Response.Message = "Tu contraseña expirará en " + minutosRestantes + (minutosRestantes == 1 ? " minuto" : " minutos");
+                        if (diasRestantes <= 7 && diasRestantes > 0)
+                            Response.Message = "Tu contraseña expirará en " + diasRestantes + (diasRestantes == 1 ? " día" : " días");
+                        else if (diasRestantes == 0)
+                        {
+                            if (horasRestantes > 0)
+                                Response.Message = "Tu contraseña expirará en " + horasRestantes + (horasRestantes == 1 ? " hora" : " horas");
+                            else
+                                Response.Message = "Tu contraseña expirará en " + minutosRestantes + (minutosRestantes == 1 ? " minuto" : " minutos");
+                        }
+                    } else {
+                        Response.Message = "Tu contraseña está próxima a expirar";
                     }
+
+                    
                 }
 
                 if (cod == 514 || cod == 66050)
@@ -95,7 +100,15 @@ namespace BanorteXXISecurity.Business
                         if (user.IsAccountLockedOut())
                         {
                             Response.Code = 0;
-                            Response.Message = "La cuenta " + username + " está bloqueada, se desbloqueará 30 minutos";
+
+                            if(tipo == 1 )
+                            {
+                                Response.Message = "La cuenta " + username + " está bloqueada, se desbloqueará en 30 minutos";
+                            } else
+                            {
+                                Response.Message = "La cuenta " + username + " está bloqueada";
+                            }
+                            
                         }
                         else
                         {
@@ -122,8 +135,13 @@ namespace BanorteXXISecurity.Business
 
                                     intentosFallidos--;
 
-                                    Response.Message = "La contraseña es incorrecta. Solo te " + (intentosFallidos > 1 ? "quedan " : "queda ") + intentosFallidos + (intentosFallidos > 1 ? " intentos" : " intento");
-
+                                    if(tipo == 1)
+                                    {
+                                        Response.Message = "La contraseña es incorrecta. Solo te " + (intentosFallidos > 1 ? "quedan " : "queda ") + intentosFallidos + (intentosFallidos > 1 ? " intentos" : " intento");
+                                    } else
+                                    {
+                                        Response.Message = "El usuario y/o la contraseña son incorrectos";
+                                    }
                                 }
                                 catch (Exception)
                                 {
@@ -143,17 +161,27 @@ namespace BanorteXXISecurity.Business
                     else
                     {
                         Response.Code = 0;
-                        Response.Message = string.Format("La cuenta " + username + " no existe");
+
+                        if(tipo == 1) {
+                            Response.Message = string.Format("La cuenta " + username + " no existe");
+                        } else {
+                            Response.Message = "El usuario y/o la contraseña son incorrectos";
+                        }
                     }
                 }
             }
             catch (Exception x)
             {
                 Response.Code = 0;
-                Response.Message = "La cuenta " + username + " no existe";
-                
 
-               // Dal.LogError(app, username, "Active.ValidateCredentials: " + ex.Message);
+                if (tipo == 1)
+                {
+                    Response.Message = string.Format("La cuenta " + username + " no existe");
+                }
+                else
+                {
+                    Response.Message = "El usuario y/o la contraseña son incorrectos";
+                }
             }
             return Response;
         }
