@@ -233,7 +233,6 @@ C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiv
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\Interop.ActiveDs.dll
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\MethodResponse.dll
-C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csprojAssemblyReference.cache
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.AssemblyInfoInputs.cache
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.AssemblyInfo.cs
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csproj.CoreCompileInputs.cache
@@ -247,3 +246,4 @@ C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiv
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.dll
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.pdb
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.genruntimeconfig.cache
+C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csprojAssemblyReference.cache

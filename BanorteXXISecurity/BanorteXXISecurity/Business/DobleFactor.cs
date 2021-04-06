@@ -66,7 +66,7 @@ namespace BanorteXXISecurity.Business
 
                     ResponseValidateCode vdCode = new ResponseValidateCode();
 
-                    vdCode.LlaveDesbloqueo = EjecucionSP.ActualizaEstatusDobleFactor(par.Usuario, par.App);
+                    vdCode.LlaveDesbloqueo = EjecucionSP.ActualizaEstatusDobleFactor(par.Usuario, par.App, "172.15.20.1");
                     res.Respuesta = vdCode;
                 }
             }

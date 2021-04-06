@@ -220,7 +220,7 @@ namespace BanorteXXISecurity.Business
             return res;
         }
 
-        public static string ActualizaEstatusDobleFactor(string usuario, string app) {
+        public static string ActualizaEstatusDobleFactor(string usuario, string app, string ip) {
             string res = "";
 
             List<dynamic> pars = new List<dynamic>();
@@ -228,6 +228,7 @@ namespace BanorteXXISecurity.Business
             ParametrosSP par1 = new ParametrosSP();
             ParametrosSP par2 = new ParametrosSP();
             ParametrosSP par3 = new ParametrosSP();
+            ParametrosSP par4 = new ParametrosSP();
 
             par1.Nombre = "P_USUARIO";
             par1.Direccion = "in";
@@ -243,12 +244,19 @@ namespace BanorteXXISecurity.Business
 
             pars.Add(par2);
 
-            par3.Nombre = "P_RESULTADO";
-            par3.Direccion = "out";
+            par3.Nombre = "P_IP";
+            par3.Direccion = "in";
             par3.Tipo = "varchar2";
-            par3.Valor = "";
+            par3.Valor = ip;
 
             pars.Add(par3);
+
+            par4.Nombre = "P_RESULTADO";
+            par4.Direccion = "out";
+            par4.Tipo = "varchar2";
+            par4.Valor = "";
+
+            pars.Add(par4);
 
             res = Dal.EjecutaSP("PKG_SECURITY.SP_ACTUALIZA_ESTATUS_DOBLE_FACTOR", pars);
 
@@ -291,7 +299,7 @@ namespace BanorteXXISecurity.Business
             return res;
         }
 
-        public static string BitacoraAcceso(string usuario, string app)
+        public static string BitacoraAcceso(string usuario, string app, string ip)
         {
             string res = "";
 
@@ -300,6 +308,7 @@ namespace BanorteXXISecurity.Business
             ParametrosSP par1 = new ParametrosSP();
             ParametrosSP par2 = new ParametrosSP();
             ParametrosSP par3 = new ParametrosSP();
+            ParametrosSP par4 = new ParametrosSP();
 
             par1.Nombre = "P_USUARIO";
             par1.Direccion = "in";
@@ -315,12 +324,19 @@ namespace BanorteXXISecurity.Business
 
             pars.Add(par2);
 
-            par3.Nombre = "P_RESULTADO";
-            par3.Direccion = "out";
+            par3.Nombre = "P_IP";
+            par3.Direccion = "in";
             par3.Tipo = "varchar2";
-            par3.Valor = "";
+            par3.Valor = ip;
 
             pars.Add(par3);
+
+            par4.Nombre = "P_RESULTADO";
+            par4.Direccion = "out";
+            par4.Tipo = "varchar2";
+            par4.Valor = "";
+
+            pars.Add(par4);
 
             res = Dal.EjecutaSP("PKG_SECURITY.SP_BITACORA_ACCESO", pars);
 

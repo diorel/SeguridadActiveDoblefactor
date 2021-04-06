@@ -85,7 +85,7 @@ namespace BanorteXXISecurity.Business
                             Token = NewToken.CreateToken(user.User, user.ExpiracionToken);
 
                             //Inserta registro en bitácora
-                            EjecucionSP.BitacoraAcceso(user.User, user.App);
+                            EjecucionSP.BitacoraAcceso(user.User, user.App, "172.154.22.40");
 
                             // se añade al objeto token sus propiedades 
                             //InformationToken infoToken = new InformationToken();
