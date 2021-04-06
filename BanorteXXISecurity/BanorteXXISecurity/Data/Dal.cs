@@ -15,10 +15,14 @@ namespace BanorteXXISecurity.Data
 
             try
             {
-                string connectionString = "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 15.128.25.150)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = solidaD))); User ID=SIAJXXIB; Password=Siaj$0107";
+                string connectionString = "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 15.128.25.150)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = solidaD))); User ID=fo; Password=afo2015";
 
                 using (OracleConnection connection = new OracleConnection(connectionString)) {
                     connection.Open();
+
+                    //Cambiamos esquema de BD
+                    OracleCommand cmdEsquema = new OracleCommand("ALTER SESSION SET CURRENT_SCHEMA = SIAJXXIB", connection);
+                    cmdEsquema.ExecuteNonQuery();
 
                     OracleDataAdapter da = new OracleDataAdapter();
                     OracleCommand cmd = new OracleCommand(nombreSP, connection);

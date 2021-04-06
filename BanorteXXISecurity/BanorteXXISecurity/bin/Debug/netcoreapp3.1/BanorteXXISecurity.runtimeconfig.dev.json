@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\diore\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\diore\\.nuget\\packages"
+      "C:\\Users\\sygno.mmadrigal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sygno.mmadrigal\\.nuget\\packages"
     ]
   }
 }
