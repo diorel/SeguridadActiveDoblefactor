@@ -326,5 +326,60 @@ namespace BanorteXXISecurity.Business
 
             return res;
         }
+
+        public static string LogErrores(string clase, string metodo, string parametros, string error) {
+            string res = "";
+
+            try {
+                List<dynamic> pars = new List<dynamic>();
+
+                ParametrosSP par1 = new ParametrosSP();
+                ParametrosSP par2 = new ParametrosSP();
+                ParametrosSP par3 = new ParametrosSP();
+                ParametrosSP par4 = new ParametrosSP();
+                ParametrosSP par5 = new ParametrosSP();
+
+                par1.Nombre = "P_CLASE";
+                par1.Direccion = "in";
+                par1.Tipo = "varchar2";
+                par1.Valor = clase;
+
+                pars.Add(par1);
+
+                par2.Nombre = "P_METODO";
+                par2.Direccion = "in";
+                par2.Tipo = "varchar2";
+                par2.Valor = metodo;
+
+                pars.Add(par2);
+
+                par3.Nombre = "P_PARAMETROS";
+                par3.Direccion = "in";
+                par3.Tipo = "varchar2";
+                par3.Valor = parametros;
+
+                pars.Add(par3);
+
+                par4.Nombre = "P_ERROR";
+                par4.Direccion = "in";
+                par4.Tipo = "varchar2";
+                par4.Valor = error;
+
+                pars.Add(par4);
+
+                par5.Nombre = "P_RESULTADO";
+                par5.Direccion = "out";
+                par5.Tipo = "varchar2";
+                par5.Valor = "";
+
+                pars.Add(par5);
+
+                res = Dal.EjecutaSP("PKG_SECURITY.SP_INSERTA_LOG_ERROR", pars);
+            } catch(Exception ex) {
+                throw ex;
+            }
+            
+            return res;
+        }
     }
 }

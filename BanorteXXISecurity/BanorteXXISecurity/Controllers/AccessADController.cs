@@ -2,24 +2,24 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MethodResponse;
 using BanorteXXISecurity.Business;
 using BanorteXXISecurity.Helpers;
-using BanorteXXISecurity.Data;
+using System.Text.Json;
+using Microsoft.Extensions.Logging;
 
 namespace BanorteXXISecurity.Controllers
 {
-
-    /// <summary>
-    /// comentario Raul Cortes
-    /// </summary>
-
     [ApiController]
     public class AccessADController : ControllerBase
     {
+        private readonly ILogger _logger;
+
+        public AccessADController(ILogger<AccessADController> logger)
+        {
+            _logger = logger;
+        }
+
         [Route("BanorteXXISecurity/V1/LoginUsuario")]
         [HttpPost]
         public MethodResponse<ActiveResponse> validaLogin(Credential user) {
@@ -125,7 +125,14 @@ namespace BanorteXXISecurity.Controllers
                     Response.Code = 0;
                     Response.Message = "Ocurrió un error";
 
-                    //Dal.LogError(user.App, user.User, "AccessADController.validaLogin: " + exception.Message);
+                    string pars = JsonSerializer.Serialize(user);
+
+                    try
+                    {
+                        EjecucionSP.LogErrores("AccessADController", "validaLogin", pars, ex.Message);
+                    } catch(Exception exc) {
+                        _logger.Log(LogLevel.Error, exc, exc.Message);
+                    }
                 }
             }
 
@@ -134,9 +141,9 @@ namespace BanorteXXISecurity.Controllers
 
         [Route("BanorteXXISecurity/V1/ValidaCodigo")]
         [HttpPost]
-        public ReponseApi validaLogin(DataValidateGoogle par) {
+        public ReponseApi validaCodigo(DataValidateGoogle par) {
             ReponseApi res = new ReponseApi();
-
+            
             res.Codigo = 0;
             res.Mensaje = "";
             res.Respuesta = null;
@@ -144,23 +151,21 @@ namespace BanorteXXISecurity.Controllers
             try {
                 if (string.IsNullOrEmpty(par.Usuario)) {
                     res.Mensaje = "El Usuario no puede ser nulo";
-                } else if (string.IsNullOrEmpty(par.App))
-                {
+                } else if (string.IsNullOrEmpty(par.App)) {
                     res.Mensaje = "La App no puede ser nula";
-                }
-                else if (string.IsNullOrEmpty(par.Codigo))
-                {
+                } else if (string.IsNullOrEmpty(par.Codigo)) {
                     res.Mensaje = "El Codigo no puede ser nulo";
-                }
-                else
-                {
+                } else {
                     res = DobleFactor.ValidaCodigoDobleFactor(par);
                 }
-            }
-            catch (Exception ex)
-            {
-                //Log Error
-                //_logger.Log(LogLevel.Error, ex, ex.Message);
+            } catch (Exception ex) {
+                string pars = JsonSerializer.Serialize(par);
+
+                try {
+                    EjecucionSP.LogErrores("AccessADController", "validaCodigo", pars, ex.Message);
+                } catch (Exception exc) {
+                    _logger.Log(LogLevel.Error, exc, exc.Message);
+                }
             }
 
             return res;

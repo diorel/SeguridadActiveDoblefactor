@@ -13,29 +13,34 @@ namespace BanorteXXISecurity.Data
         public static string EjecutaSP(string nombreSP, List<dynamic> parametros) {
             string res = "";
 
-            string connectionString = "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 15.128.25.150)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = solidaD))); User ID=SIAJXXIB; Password=Siaj$0107";
+            try
+            {
+                string connectionString = "Data Source=(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 15.128.25.150)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = solidaD))); User ID=SIAJXXIB; Password=Siaj$0107";
 
-            using (OracleConnection connection = new OracleConnection(connectionString)) {
-                connection.Open();
+                using (OracleConnection connection = new OracleConnection(connectionString)) {
+                    connection.Open();
 
-                OracleDataAdapter da = new OracleDataAdapter();
-                OracleCommand cmd = new OracleCommand(nombreSP, connection);
+                    OracleDataAdapter da = new OracleDataAdapter();
+                    OracleCommand cmd = new OracleCommand(nombreSP, connection);
 
-                cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
 
-                foreach (dynamic par in parametros) {
-                    if(par.Direccion == "in") {
-                        cmd.Parameters.Add(par.Nombre, ObtieneTipoPar(par.Tipo), par.Valor, ObtieneDireccionPar(par.Direccion));
-                    } else {
-                        cmd.Parameters.Add(par.Nombre, ObtieneTipoPar(par.Tipo), 4000, "", ObtieneDireccionPar(par.Direccion));
+                    foreach (dynamic par in parametros) {
+                        if (par.Direccion == "in") {
+                            cmd.Parameters.Add(par.Nombre, ObtieneTipoPar(par.Tipo), par.Valor, ObtieneDireccionPar(par.Direccion));
+                        } else {
+                            cmd.Parameters.Add(par.Nombre, ObtieneTipoPar(par.Tipo), 4000, "", ObtieneDireccionPar(par.Direccion));
+                        }
                     }
+
+                    cmd.ExecuteNonQuery();
+
+                    res = cmd.Parameters["P_RESULTADO"].Value.ToString();
                 }
-
-                cmd.ExecuteNonQuery();
-
-                res = cmd.Parameters["P_RESULTADO"].Value.ToString();
+            } catch(Exception ex) {
+                throw ex;
             }
-
+            
             return res;
         }
 
