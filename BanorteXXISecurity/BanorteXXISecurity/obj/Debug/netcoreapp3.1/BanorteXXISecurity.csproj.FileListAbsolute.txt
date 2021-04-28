@@ -247,3 +247,6 @@ C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiv
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.pdb
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.genruntimeconfig.cache
 C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\obj\Debug\netcoreapp3.1\BanorteXXISecurity.csprojAssemblyReference.cache
+C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll

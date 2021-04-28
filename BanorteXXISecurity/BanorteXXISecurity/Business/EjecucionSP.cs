@@ -94,7 +94,7 @@ namespace BanorteXXISecurity.Business
         }
 
         public static string InsertaUsuario(string apellidos, string nombre, string usuario, string celular, string email, 
-                                            string app, string llave, string config) {
+                                            string app, string llave, string config, string codigoRecupera) {
             string res = "";
 
             List<dynamic> pars = new List<dynamic>();
@@ -108,6 +108,7 @@ namespace BanorteXXISecurity.Business
             ParametrosSP par7 = new ParametrosSP();
             ParametrosSP par8 = new ParametrosSP();
             ParametrosSP par9 = new ParametrosSP();
+            ParametrosSP par10 = new ParametrosSP();
 
             par1.Nombre = "P_APELLIDOS";
             par1.Direccion = "in";
@@ -165,12 +166,19 @@ namespace BanorteXXISecurity.Business
 
             pars.Add(par8);
 
-            par9.Nombre = "P_RESULTADO";
-            par9.Direccion = "out";
+            par9.Nombre = "P_CODIGO_RECUPERACION";
+            par9.Direccion = "in";
             par9.Tipo = "varchar2";
-            par9.Valor = "";
+            par9.Valor = codigoRecupera;
 
             pars.Add(par9);
+
+            par10.Nombre = "P_RESULTADO";
+            par10.Direccion = "out";
+            par10.Tipo = "varchar2";
+            par10.Valor = "";
+
+            pars.Add(par10);
 
             res = Dal.EjecutaSP("PKG_SECURITY.SP_INSERTA_USUARIO", pars);
 
@@ -395,6 +403,112 @@ namespace BanorteXXISecurity.Business
                 throw ex;
             }
             
+            return res;
+        }
+
+
+        public static string ReconfigurarToken(string usuario, string app, string codigoRecupera)
+        {
+            string res = "";
+
+            List<dynamic> pars = new List<dynamic>();
+
+            ParametrosSP par1 = new ParametrosSP();
+            ParametrosSP par2 = new ParametrosSP();
+            ParametrosSP par3 = new ParametrosSP();
+            ParametrosSP par4 = new ParametrosSP();
+
+            par1.Nombre = "P_USUARIO";
+            par1.Direccion = "in";
+            par1.Tipo = "varchar2";
+            par1.Valor = usuario;
+
+            pars.Add(par1);
+
+            par2.Nombre = "P_APP";
+            par2.Direccion = "in";
+            par2.Tipo = "varchar2";
+            par2.Valor = app;
+
+            pars.Add(par2);
+
+            par3.Nombre = "P_CODIGO_RECUPERA";
+            par3.Direccion = "in";
+            par3.Tipo = "varchar2";
+            par3.Valor = codigoRecupera;
+
+            pars.Add(par3);
+
+            par4.Nombre = "P_RESULTADO";
+            par4.Direccion = "out";
+            par4.Tipo = "varchar2";
+            par4.Valor = "";
+
+            pars.Add(par4);
+
+            res = Dal.EjecutaSP("PKG_SECURITY.SP_RECONFIGURA_DOBLE_FACTOR", pars);
+
+            return res;
+        }
+
+
+        public static string ActualizaToken(string usuario, string app, string llave, string config, string codigoRecupera)
+        {
+            string res = "";
+
+            List<dynamic> pars = new List<dynamic>();
+
+            ParametrosSP par1 = new ParametrosSP();
+            ParametrosSP par2 = new ParametrosSP();
+            ParametrosSP par3 = new ParametrosSP();
+            ParametrosSP par4 = new ParametrosSP();
+            ParametrosSP par5 = new ParametrosSP();
+            ParametrosSP par6 = new ParametrosSP();
+
+            par1.Nombre = "P_USUARIO";
+            par1.Direccion = "in";
+            par1.Tipo = "varchar2";
+            par1.Valor = usuario;
+
+            pars.Add(par1);
+
+            par2.Nombre = "P_APP";
+            par2.Direccion = "in";
+            par2.Tipo = "varchar2";
+            par2.Valor = app;
+
+            pars.Add(par2);
+
+            par3.Nombre = "P_LLAVE";
+            par3.Direccion = "in";
+            par3.Tipo = "varchar2";
+            par3.Valor = llave;
+
+            pars.Add(par3);
+
+            par4.Nombre = "P_CONFIG";
+            par4.Direccion = "in";
+            par4.Tipo = "varchar2";
+            par4.Valor = config;
+
+            pars.Add(par4);
+
+            par5.Nombre = "P_CODIGO_RECUPERACION";
+            par5.Direccion = "in";
+            par5.Tipo = "varchar2";
+            par5.Valor = codigoRecupera;
+
+            pars.Add(par5);
+
+            par6.Nombre = "P_RESULTADO";
+            par6.Direccion = "out";
+            par6.Tipo = "varchar2";
+            par6.Valor = "";
+
+            pars.Add(par6);
+
+            res = Dal.EjecutaSP("PKG_SECURITY.SP_ACTUALIZA_TOKEN", pars);
+
             return res;
         }
     }

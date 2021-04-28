@@ -1,0 +1,6 @@
+2021-04-21T12:45:41.9344163-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-21T12:45:41.9483640-05:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-21T12:45:41.9516222-05:00  [INF] Content root path: "C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity" (b5d60022)
+2021-04-21T18:44:02.0006662-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-04-21T18:44:02.0154451-05:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-04-21T18:44:02.0188385-05:00  [INF] Content root path: "C:\Users\sygno.mmadrigal\Desktop\Proyectos Git\BanorteXXISecurity\SeguridadActiveDoblefactor\BanorteXXISecurity\BanorteXXISecurity" (b5d60022)

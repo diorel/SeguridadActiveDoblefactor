@@ -7,6 +7,7 @@ using BanorteXXISecurity.Business;
 using BanorteXXISecurity.Helpers;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Cors;
 
 namespace BanorteXXISecurity.Controllers
 {
@@ -20,7 +21,7 @@ namespace BanorteXXISecurity.Controllers
             _logger = logger;
         }
 
-        //Internet
+        //Intranet
         [Route("BanorteXXISecurity/V1/1NT/LoginUsuario")]
         [HttpPost]
         public MethodResponse<ActiveResponse> validaUsuarioIntranet(Credential user) {
@@ -49,7 +50,7 @@ namespace BanorteXXISecurity.Controllers
             return Response;
         }
 
-        //Intranet
+        //Internet
         [Route("BanorteXXISecurity/V1/2NT/LoginUsuario")]
         [HttpPost]
         public MethodResponse<ActiveResponse> validaUsuarioInternet(Credential user)
@@ -92,6 +93,78 @@ namespace BanorteXXISecurity.Controllers
                     res.Mensaje = "El Codigo no puede ser nulo";
                 } else {
                     res = DobleFactor.ValidaCodigoDobleFactor(par);
+                }
+            } catch (Exception ex) {
+                string pars = JsonSerializer.Serialize(par);
+
+                try {
+                    EjecucionSP.LogErrores("AccessADController", "validaCodigo", pars, ex.Message);
+                } catch (Exception exc) {
+                    _logger.Log(LogLevel.Error, exc, exc.Message);
+                }
+            }
+
+            return res;
+        }
+
+
+        [Route("BanorteXXISecurity/V1/Desencripta")]
+        [HttpPost]
+        public ReponseApi desencriptaTexto(ActiveResponse par)
+        {
+            ReponseApi res = new ReponseApi();
+
+            res.Codigo = 0;
+            res.Mensaje = "";
+            res.Respuesta = null;
+
+            try
+            {
+                res.Codigo = 0;
+                res.Mensaje = "";
+                res.Respuesta = Encriptacion.DesencriptaResponse(par, par.Llave);
+            }
+            catch (Exception ex)
+            {
+                string pars = JsonSerializer.Serialize(par);
+
+                try
+                {
+                    EjecucionSP.LogErrores("AccessADController", "validaCodigo", pars, ex.Message);
+                }
+                catch (Exception exc)
+                {
+                    _logger.Log(LogLevel.Error, exc, exc.Message);
+                }
+            }
+
+            return res;
+        }
+
+
+        [Route("BanorteXXISecurity/V1/ReconfiguraToken")]
+        [HttpPost]
+        public ReponseApi ReconfigurarToken(ReconfiguraUsuario par) {
+            ReponseApi res = new ReponseApi();
+            ResponseQRGoogle codQR = new ResponseQRGoogle();
+
+            res.Codigo = 0;
+            res.Mensaje = "";
+            res.Respuesta = null;
+
+            try {
+                var resultCodigo = EjecucionSP.ReconfigurarToken(par.Usuario, par.App, par.CodigoRecuperacion);
+
+                if(resultCodigo.IndexOf('@') != -1) {
+                    string[] datos = resultCodigo.Split('|'); 
+                    codQR = Login.reconfiguraUsuario(par.App, par.Usuario, datos[0], datos[1]).Result;
+
+                    res.Codigo = 1;
+                    res.Mensaje = "";
+                    res.Respuesta = codQR;
+                } else {
+                    res.Codigo = 0;
+                    res.Mensaje = resultCodigo;
                 }
             } catch (Exception ex) {
                 string pars = JsonSerializer.Serialize(par);

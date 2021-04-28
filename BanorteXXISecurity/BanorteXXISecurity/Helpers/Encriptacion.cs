@@ -97,10 +97,42 @@ namespace BanorteXXISecurity.Helpers
             foreach (PropertyInfo p in properties) {
                 string aux = p.PropertyType.Name;
 
-                if(p.PropertyType.Name == "String") {
+                if(aux == "String") {
                     try
                     {
-                        objReflect.GetProperty(p.Name).SetValue(obj, Encriptar(llave, p.GetValue(obj).ToString()));
+                        if(p.Name != "Llave") {
+                            objReflect.GetProperty(p.Name).SetValue(obj, Encriptar(llave, p.GetValue(obj).ToString()));
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(aux);
+                    }
+                }
+            }
+
+            return obj;
+        }
+
+        public static dynamic DesencriptaResponse(ActiveResponse obj, string llave)
+        {
+            PropertyInfo[] properties = typeof(ActiveResponse).GetProperties();
+            Type objReflect = obj.GetType();
+
+            foreach (PropertyInfo p in properties)
+            {
+                string aux = p.PropertyType.Name;
+
+                if (p.PropertyType.Name == "String")
+                {
+                    try
+                    {
+                        if(p.Name == "Llave" || p.Name == "idUsuario") {
+                            objReflect.GetProperty(p.Name).SetValue(obj, null);
+                        } else
+                        {
+                            objReflect.GetProperty(p.Name).SetValue(obj, Desencriptar(llave, p.GetValue(obj).ToString()));
+                        }
                     }
                     catch (Exception ex)
                     {

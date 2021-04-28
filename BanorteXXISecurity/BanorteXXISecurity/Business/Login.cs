@@ -55,6 +55,7 @@ namespace BanorteXXISecurity.Business
 
                                 Response.Code = 3;
                                 Response.Result = Encriptacion.EncriptaResponse(MetaDatos.Result, Encriptacion.GeneraLlave(config));
+                                Response.Result.IDUsuario = config;
 
                                 EjecucionSP.ActualizaLlaveDesbloqueo(config, user.App, llaveDesbloqueo);
                             }
@@ -63,16 +64,21 @@ namespace BanorteXXISecurity.Business
                                 //Si no está configurado se devuelve el código QR de configuración
                                 ResponseQRGoogle codQR = new ResponseQRGoogle();
 
-                                codQR = DobleFactor.ObtenerCodigoConfig(user.App, MetaDatos.Result.Apellidos,
-                                    MetaDatos.Result.Nombre, user.User, MetaDatos.Result.Telefono, MetaDatos.Result.Email).Respuesta;
+                                ReponseApi res = DobleFactor.ObtenerCodigoConfig(user.App, MetaDatos.Result.Apellidos,
+                                    MetaDatos.Result.Nombre, user.User, MetaDatos.Result.Telefono, MetaDatos.Result.Email);
 
-                                string llaveDesbloqueo = Encriptacion.GeneraLlave(codQR.IDUsuario);
+                                codQR = res.Respuesta;
+
+                                int idUsuario = Int32.Parse(res.Mensaje);
+
+                                string llaveDesbloqueo = Encriptacion.GeneraLlave(idUsuario);
 
                                 Response.Code = 2;
                                 Response.Result = Encriptacion.EncriptaResponse(MetaDatos.Result, llaveDesbloqueo);
                                 Response.Result.CodigoQR = codQR;
+                                Response.Result.IDUsuario = idUsuario;
 
-                                EjecucionSP.ActualizaLlaveDesbloqueo(codQR.IDUsuario, user.App, llaveDesbloqueo);
+                                EjecucionSP.ActualizaLlaveDesbloqueo(idUsuario, user.App, llaveDesbloqueo);
                             }
                         }
                         else
@@ -104,6 +110,29 @@ namespace BanorteXXISecurity.Business
                 } catch (Exception ex) {
                     throw ex;
                 }
+            }
+
+            return Response;
+        }
+
+        public static MethodResponse<ResponseQRGoogle> reconfiguraUsuario(string app, string usuario, string email, string desbloqueo) {
+            var Response = new MethodResponse<ResponseQRGoogle>();
+
+            try {
+                ResponseQRGoogle codQR = new ResponseQRGoogle();
+
+                ReponseApi res = DobleFactor.ReconfiguraToken(app, usuario, email);
+
+                codQR = res.Respuesta;
+
+                int idUsuario = Int32.Parse(res.Mensaje);
+
+                EjecucionSP.ActualizaLlaveDesbloqueo(idUsuario, app, desbloqueo);
+
+                Response.Code = 2;
+                Response.Result = codQR;
+            } catch(Exception ex) {
+                throw ex;
             }
 
             return Response;

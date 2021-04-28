@@ -27,6 +27,8 @@ namespace BanorteXXISecurity.Models
         public List<InformationToken> InformacionToken { get; set; }
         public string Foto { get; set; }
         public ResponseQRGoogle CodigoQR { get; set; }
+        public int IDUsuario { get; set; }
+        public string Llave { get; set; }
 
     }
 }
